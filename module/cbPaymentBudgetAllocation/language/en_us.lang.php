@@ -14,10 +14,9 @@ $mod_strings = array(
 	'cbPaymentBudgetAllocation ID' => 'Payment-BA ID',
 
 	'LBL_CUSTOM_INFORMATION' => 'Custom Information',
-	'LBL_cbPaymentBudgetAllocation_INFORMATION' => 'Payment-Budget Allocation Information',
+	'LBL_cbPaymentBudgetAllocation_INFORMATION' => 'Payment-Budget Allocation',
 	'LBL_DESCRIPTION_INFORMATION' => 'Description',
 
-	'PaymentBudgetAllocation' => 'Payment-Budget Allocation',
 	'Payment Budget Allocation No' => 'Payment-BA No',
 	'Payment' => 'Payment',
 	'Budget Item' => 'Budget Item',

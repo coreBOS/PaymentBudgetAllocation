@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <module>
 <name>cbPaymentBudgetAllocation</name>
-<label>PaymentBudgetAllocation</label>
+<label>cbPaymentBudgetAllocation</label>
 <parent>Marketing</parent>
 <version>1.0</version>
 <short_description>Module description.</short_description>
@@ -33,10 +33,10 @@
 <sql><![CDATA[CREATE TABLE `vtiger_cbpaymentbudgetallocation` (
   `cbpaymentbudgetallocationid` int(11) NOT NULL,
   `cbpaymentbudgetallocationno` varchar(56) default NULL,
-  `cyp` varchar(56) default NULL,
+  `cyp` int(11) default NULL,
   `budgetitem` varchar(56) default NULL,
   `percentage` int(15) default NULL,
-  `pbamount` int(15) default NULL,
+  `pbamount` decimal(25,6) default NULL,
   PRIMARY KEY (`cbpaymentbudgetallocationid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
 </table>
@@ -62,7 +62,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>1</sequence>
+<sequence>2</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>V~M</typeofdata>
 <quickcreate>0</quickcreate>
@@ -88,7 +88,7 @@
 <selected>0</selected>
 <sequence>1</sequence>
 <maximumlength>100</maximumlength>
-<typeofdata>V~O</typeofdata>
+<typeofdata>I~O</typeofdata>
 <quickcreate>0</quickcreate>
 <quickcreatesequence>0</quickcreatesequence>
 <displaytype>1</displaytype>
@@ -109,7 +109,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>1</sequence>
+<sequence>3</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>V~O</typeofdata>
 <quickcreate>0</quickcreate>
@@ -132,7 +132,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>1</sequence>
+<sequence>5</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>I~O</typeofdata>
 <quickcreate>0</quickcreate>
@@ -152,7 +152,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>1</sequence>
+<sequence>6</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>NN~O</typeofdata>
 <quickcreate>0</quickcreate>
@@ -172,7 +172,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>10</sequence>
+<sequence>4</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>V~M</typeofdata>
 <quickcreate>1</quickcreate>
@@ -192,7 +192,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>11</sequence>
+<sequence>7</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>V~O</typeofdata>
 <quickcreate>3</quickcreate>
@@ -212,7 +212,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>12</sequence>
+<sequence>8</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>DT~O</typeofdata>
 <quickcreate>3</quickcreate>
@@ -232,7 +232,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>13</sequence>
+<sequence>9</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>DT~O</typeofdata>
 <quickcreate>3</quickcreate>

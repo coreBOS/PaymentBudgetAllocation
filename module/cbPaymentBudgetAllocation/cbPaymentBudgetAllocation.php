@@ -128,7 +128,7 @@ class cbPaymentBudgetAllocation extends CRMEntity {
 	public function vtlib_handler($modulename, $event_type) {
 		if ($event_type == 'module.postinstall') {
 			// Handle post installation actions
-			$this->setModuleSeqNumber('configure', $modulename, 'PaymentBA-', '0000001');
+			$this->setModuleSeqNumber('configure', $modulename, 'PayBA-', '0000001');
 		} elseif ($event_type == 'module.disabled') {
 			// Handle actions when this module is disabled.
 		} elseif ($event_type == 'module.enabled') {
